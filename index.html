@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    /* Reset */
+    *{
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      }
+    img{
+      width: 100%;
+      background-repeat: no-repeat;
+    }
+    /* General Rules */
+    @font-face {
+      font-family: 'Red Hat Display' , sans-serif;
+      src: url(https://fonts.google.com/specimen/Red+Hat+Display);
+      font-weight: 500;
+    }
+    @font-face {
+      font-family: 'Red Hat Display' , sans-serif;
+      src: url(https://fonts.google.com/specimen/Red+Hat+Display);
+      font-weight: 700;
+    }
+    :root{
+      --Pale-blue: hsl(225, 100%, 94%);
+      --Bright-blue: hsl(245, 75%, 52%);
+      --Very-pale-blue: hsl(225, 100%, 98%);
+      --Desaturated-blue: hsl(224, 23%, 55%);
+      --Dark-blue: hsl(223, 47%, 23%);
+      }
+    body{
+      height:calc(100vh - 1px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      font-family: 'Red Hat Display' , sans-serif;
+      background-color:var(--Pale-blue);
+    }
+    /* Start Box */ 
+    .bigbox{
+      width: 30%;
+      border-radius:1.25rem;
+      margin-top: -270px;
+      margin-left: auto;
+      margin-bottom: 5em;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--Very-pale-blue);
+      box-shadow: 0px 20px 23px 0px rgb(0 0 0 / 10%)
+    }
+    .bigbox img{
+      width: 100%;
+      margin-top: -.5rem;
+      margin-bottom: 1.5rem;
+      border-top-left-radius:1.25rem ;
+      border-top-right-radius:1.25rem ;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    #pr{
+      margin: 1.25rem 2.25rem;
+      font-size: 1em;
+    }
+    .smallbox{
+      width: 380px;
+      height:100px ;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color:hsl(240, 87%, 97%);
+      border-radius:1.25rem;
+      margin-bottom: .25rem;
+    }
+    .smallbox img{
+      width: 60px;
+      margin-bottom: 0.25rem;
+      margin-left: 0.25rem;
+    }
+    .sec{
+      width: 26%;
+      font-size: 0.6em;
+      margin-left: 1rem;
+    }
+    .sec h2{
+      margin-bottom: 0.25rem;
+    }
+    .sec p{
+      font-size: 1.5em;
+    }
+    .smallbox a{
+      margin-left: 7.25rem;;
+    }
+    .pra{
+      width: 85%;
+      height: 9%;
+      border-radius: .5em;
+      margin-top: 1em;
+      color:var(--Very-pale-blue);
+      background-color: var(--Bright-blue);
+      box-shadow: -2px 14px 6px 3px rgb(0 0 0 / 10%)
+    }
+    .pra>p{
+      margin-top: .8em;
+    }
+    .pra+p{
+      margin-top: 1.5em;
+      margin-bottom: 2em;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+  </style>
+</head>
+<body>
+  <img src="./images/pattern-background-desktop.svg" alt="icon">
+  <div class="bigbox">
+    <img src="./images/illustration-hero.svg" alt="icon">
+    <h1>Order Summary</h1>
+    <p id="pr">You can now listen to millions of songs, audiobooks, and podcasts on any 
+    device anywhere you like!</p>
+    <div class="smallbox">
+      <img src="./images/icon-music.svg" alt="icon">
+      <div class="sec">
+        <h2>Annual Plan</h2>
+        <p>$59.99/year</p>
+      </div>
+      <a href="#">Change</a>
+    </div>
+    <div class="pra">
+      <p>Proceed to Payment</p>
+    </div>
+    <p>Cancel Order</p>
+  </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+</html>
